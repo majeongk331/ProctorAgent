@@ -1,0 +1,29 @@
+interval: 1.0
+log_dir: "%USERPROFILE%\\Desktop\\ProctorAgent\\logs"
+keywords:
+  - chatgpt
+  - ChatGPT
+  - 챗지피티
+  - chat.openai.com
+  - openai
+  - claude
+  - claude.assistant
+  - 클로드
+  - 제미나이
+  - gemini
+  - bard
+  - ai assistant
+  - ask ai
+title_markers:
+  - chatgpt
+  - 챗지피티
+  - openai
+  - claude
+  - 클로드
+  - gemini
+  - 제미나이
+  - bard
+  - ai
+template_matching: true
+ocr_enabled: false
+debug_save_all: false
