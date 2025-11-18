@@ -10,3 +10,9 @@ pyinstaller --onefile --noconsole --name ProctorAgent agent.py ^
 
 pyinstaller --onefile --noconsole --name ProctorUI ProctorUI.py
 
+
+#관리자 권한
+cd "C\Program Files\mosquitto"
+mosquitto -v -c mosquitto.conf # -> 통신 준비
+
+python mqtt_logger.py
