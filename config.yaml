@@ -1,29 +1,33 @@
+seat_id: "A-01"
 interval: 1.0
 log_dir: "%USERPROFILE%\\Desktop\\ProctorAgent\\logs"
 keywords:
   - chatgpt
   - ChatGPT
   - 챗지피티
-  - chat.openai.com
-  - openai
   - claude
   - claude.assistant
   - 클로드
   - 제미나이
   - gemini
   - bard
-  - ai assistant
-  - ask ai
+  - perplexity
 title_markers:
   - chatgpt
   - 챗지피티
-  - openai
   - claude
   - 클로드
   - gemini
   - 제미나이
   - bard
-  - ai
+  - perplexity
 template_matching: true
 ocr_enabled: false
 debug_save_all: false
+
+mqtt:
+  enabled: true
+  broker: "192.168.137.154"     
+  port: 1883
+  topic: "exam/agent/events"
+  qos: 1
