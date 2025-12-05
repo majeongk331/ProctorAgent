@@ -1,5 +1,6 @@
 import os, time, datetime, ctypes, json
 from pathlib import Path
+from notifier import notify_all
 import yaml
 import psutil
 import mss
@@ -229,6 +230,9 @@ def main():
             }
             with open(LOG_DIR / "log.txt","a",encoding="utf-8") as f:
                 f.write(json.dumps(log_line, ensure_ascii=False) + "\n")
+            
+            seat_id = CFG.get("seat_id", "?")
+            notify_all(CFG, seat_id, reason, title, img_path)
 
         # 인터벌 유지
         dt = time.time() - t0
