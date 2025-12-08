@@ -23,19 +23,10 @@ on_connect rc = 0
 Subscribed to exam/agent/events
 
 === 새 감지 이벤트 수신 ===
-seat: A-01
-host: student-PC
-reason: template_match
-title: ChatGPT 탐지됨
-image: C:/ExamAgent/logs/20251119_093512.png
-ts: 1763480932
----------------------------------------
-
-=== 새 감지 이벤트 수신 ===
-seat: A-01
-host: student-PC
-reason: template_match
-title: ChatGPT 탐지됨
-image: C:/ExamAgent/logs/20251119_093515.png
-ts: 1763480935
----------------------------------------
+Topic : exam/agent/events
+Seat  : A-01
+Host  : 마정북
+Reason: template_match
+Title : "특허 출원 절차 안내 - Chrome"
+Image : C:\Users\highq\Desktop\ProctorAgent\logs\images\susp_20251202_164800.png
+TS    : 1764661687
